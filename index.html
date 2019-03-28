@@ -7,9 +7,14 @@
 
 <body>
     <div id="header">
-        Row: <span id="row">2</span> Column: <span id="column">3</span>;
+        Row: <span id="row">0</span> Column: <span id="column">0</span>;
         <span id="stats">Strength: 20 Vitality: 13/20;</span>
         <div>Use the arrow keys to move; Press space to continue with the dialog</div>
+        <div>
+            <button id="elementState">Hide hero</button>
+            <button id="changeFont">Change font style</button>
+        </div>
+        <br>
     </div>
 
     <div id="map">
@@ -26,9 +31,9 @@
             <div class="tile tile5"></div>
             <div class="tile tile5"></div>
             <div class="tile tile5">
-                <div class="hp-bar">
+                <!-- <div class="hp-bar">
                     <span>12/12</span>
-                </div>
+                </div> -->
                 <div id="adventurer"></div>
             </div>
             <div class="tile tile5"></div>
@@ -48,9 +53,9 @@
             <div class="tile tile4"></div>
             <div class="tile tile4"></div>
             <div class="tile tile4">
-                <div class="hp-bar">
+                <!-- <div class="hp-bar">
                     <span>12/12</span>
-                </div>
+                </div> -->
                 <div class="bat"></div>
             </div>
             <div class="tile tile4"></div>
@@ -85,17 +90,17 @@
             <div class="tile tile1"></div>
             <div class="tile tile2"></div>
             <div class="tile tile2">
-                <div class="hp-bar">
+                <!-- <div class="hp-bar">
                     <span>12/12</span>
-                </div>
+                </div> -->
                 <div class="bat"></div>
             </div>
             <div class="tile tile3"></div>
             <div class="tile tile5"></div>
             <div class="tile ladder">
-                <div class="hp-bar">
+                <!-- <div class="hp-bar">
                     <span>12/12</span>
-                </div>
+                </div> -->
                 <div id="minotaur"></div>
             </div>
             <div class="wall-right"></div>
@@ -141,8 +146,9 @@
     </div>
 
 
-    <!-- <script src="exercitii.js"></script> -->
-    <script src="exercitiul2.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/tema3.js"></script>
+    <script src="js/movement.js"></script>
 </body>
 
 </html>

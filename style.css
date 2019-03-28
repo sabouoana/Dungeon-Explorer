@@ -9,7 +9,7 @@ body {
 }
 .footer
 {
-  display: inline-block;
+  display: block;
 }
 .row {
     display: block;
@@ -93,6 +93,8 @@ body {
   animation: adventurer 2s infinite; 
   background-repeat: no-repeat;
   background-position:center;
+  animation-direction:alternate;
+  position:absolute;
 }
 @keyframes adventurer {
   from{background-image: url('assets/adventurer/standby-left.png');}
