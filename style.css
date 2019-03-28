@@ -1,0 +1,156 @@
+body {
+    margin:0px;
+    padding:0px;
+    background-color: #2f2f2e;
+}
+#header {
+    color:rgb(41, 206, 0);
+    font-size:20px;
+}
+.footer
+{
+  display: inline-block;
+}
+.row {
+    display: block;
+  }
+
+#map
+{
+  display: inline-block;
+}
+.tile {
+  width: 64px;
+  height: 64px;
+  float: left;
+    
+}
+
+.tile1 {
+  background-image: url('assets/tiles/1.png');
+}
+  
+.tile2 {
+   background-image: url('assets/tiles/2.png');
+}
+  
+.tile3 {
+  background-image: url('assets/tiles/3.png');
+}
+  
+.tile4 {
+  background-image: url('assets/tiles/4.png');
+}
+  
+.tile5 {
+  background-image: url('assets/tiles/5.png');
+}
+.column-double {
+  background-image: url('assets/walls/column-double.png');
+}
+.ladder {
+  background-image: url('assets/tiles/ladder.png');
+}
+#wallTop {
+  background-image: url('assets/walls/top-left.png'), url('assets/walls/top-right.png'),url('assets/walls/top.png');
+  background-position: top left, top right, top left;
+  background-repeat: no-repeat, no-repeat, repeat;
+  width: 740px;
+  height: 82px;
+}
+#entrance {
+  width: 104px;
+  height: 82px;
+  background: url('assets/walls/entrance.png');
+  background-color:black;
+  align-items: center; 
+  margin-left: auto;
+	margin-right: auto;
+}
+#wallBottom {
+  background-image: url('assets/walls/bottom-left.png'),url('assets/walls/bottom-right.png'),url('assets/walls/bottom.png');
+  background-position: bottom left,bottom right,bottom left;
+  background-repeat: no-repeat, no-repeat,repeat;
+  width: 740px;
+  height: 20px;
+}
+.wall-left {
+  background-image: url('assets/walls/left.png');
+  height:64px;
+  width:18px;
+  float:left;
+}
+.wall-right {
+  background-image: url('assets/walls/right.png');
+  height:64px;
+  width:18px;
+  float:left;
+}
+#adventurer {
+  background: url('assets/adventurer/standby-left.png') ;
+  height:64px;
+  width:64px;
+  animation: adventurer 2s infinite; 
+  background-repeat: no-repeat;
+  background-position:center;
+}
+@keyframes adventurer {
+  from{background-image: url('assets/adventurer/standby-left.png');}
+  to{background-image: url('assets/adventurer/standby-right.png');}
+}
+#minotaur {
+  background: url('assets/monsters/minotaur-1.png');
+  height:64px;
+  width:64px;
+  animation: minotaur 2s infinite; 
+  background-repeat: no-repeat;
+  background-position:center left;
+}
+@keyframes minotaur {
+  0% {background-image: url('assets/monsters/minotaur-1.png');}
+  25% {background-image: url('assets/monsters/minotaur-2.png');}
+  50% {background-image: url('assets/monsters/minotaur-3.png');}
+  75% {background-image: url('assets/monsters/minotaur-4.png');}
+  100% {background-image: url('assets/monsters/minotaur-5.png');}
+}
+.bat {
+  height:64px;
+  width:64px;
+  animation: bat 1s infinite; 
+  background-repeat: no-repeat;
+  background-position:center;
+}
+@keyframes bat {
+  0% {background-image: url('assets/monsters/bat-1.png');}
+  25% {background-image: url('assets/monsters/bat-2.png');}
+  50% {background-image: url('assets/monsters/bat-3.png');}
+  75% {background-image: url('assets/monsters/bat-4.png');}
+  100% {background-image: url('assets/monsters/bat-5.png');}
+}
+#health-potion {
+  background-image: url('assets/items/health-potion.png');
+  height:64px;
+  width:64px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.chest {
+  background: url('assets/items/chest-closed.png') center;
+  height:64px;
+  width:64px;
+  background-repeat:no-repeat;
+}
+.hp-bar {
+  height:9px;
+  width:40px;
+  background:rgb(199, 68, 68);
+  border: 1px solid red;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2px;
+  margin-bottom:-6px;
+  color:white;
+  text-align:center;
+  font-size:9px
+}
